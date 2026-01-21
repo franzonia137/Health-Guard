@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+qdrant-client
+sentence-transformers
+Pillow
+torch
+numpy
+pydantic
+python-multipart
+requests
+feedparser
+openai
+python-dotenv

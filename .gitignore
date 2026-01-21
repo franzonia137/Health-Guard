@@ -1,0 +1,16 @@
+# Secrets
+.env
+.DS_Store
+
+# Environments
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Binaries & Database
+qdrant_bin/
+qdrant_storage/
+
+# Logs
+*.log

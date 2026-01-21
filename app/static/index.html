@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthGuard AI | Medical Verification</title>
+    <!-- Use absolute path mapping for FastAPI static mount -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-background"></div>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="branding">
+                <span class="material-icons-round logo-icon">medical_services</span>
+                <div class="logo-text">HealthGuard AI</div>
+            </div>
+
+            <div class="description-text">
+                Advanced AI for verifying medical claims and retrieving trusted health imagery.
+            </div>
+
+            <div class="status-panel">
+                <div class="panel-header">System Vitals</div>
+                <div class="status-item online">
+                    <span class="dot"></span>
+                    <span>Knowledge Base (CDC/WHO)</span>
+                </div>
+                <div class="status-item online">
+                    <span class="dot"></span>
+                    <span>Symptom Checker Logic</span>
+                </div>
+                <div class="status-item online">
+                    <span class="dot"></span>
+                    <span>Privileged Memory</span>
+                </div>
+            </div>
+
+            <div class="capabilities-panel">
+                <div class="panel-header">Medical Capabilities</div>
+                <ul class="cap-list">
+                    <li><span class="material-icons-round">biotech</span> Vaccine Verification</li>
+                    <li><span class="material-icons-round">restaurant</span> Nutrition Facts</li>
+                    <li><span class="material-icons-round">image</span> Anatomical Search</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Interface -->
+        <main class="main-content">
+            <div class="chat-wrapper">
+                <div id="chat-history" class="chat-history">
+                    <!-- Messages go here -->
+                </div>
+
+                <!-- Sample Questions Area (Dynamic Suggestions) -->
+                <div class="suggestions-area">
+                    <div class="suggestion-header">Ask HealthGuard about:</div>
+                    <div class="chips-container">
+                        <button class="chip" onclick="useSuggestion('Do vaccines contain microchips?')">
+                            <span class="material-icons-round">coronavirus</span> Vaccine Myths
+                        </button>
+                        <button class="chip" onclick="useSuggestion('Does lemon water cure diabetes?')">
+                            <span class="material-icons-round">local_drink</span> Nutrition Facts
+                        </button>
+                        <button class="chip" onclick="useSuggestion('Show me heart anatomy images')">
+                            <span class="material-icons-round">favorite</span> Anatomy Images
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input type="text" id="user-input" placeholder="Enter a medical claim or symptom question..."
+                            autocomplete="off">
+                        <button id="send-btn" class="send-btn">
+                            <span class="material-icons-round">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
