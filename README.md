@@ -6,7 +6,7 @@
 
 ---
 
-## 🏆 Hackathon Submission Details
+## 🏆 Project Details
 
 ### 1. Problem Statement: The Misinformation Epidemic
 **Societal Issue**: False medical claims spread faster than facts. From "vaccine magnetism" to dangerous home remedies, unverified information risks lives.
@@ -58,7 +58,7 @@ The system performs a **3-Way Parallel Search** for every query:
 *   *Re-Ranking*: We prioritize "Visual Matches" if the user explicitly asks for images (e.g., "Show me...").
 
 **Memory (Beyond Single Prompt) - "Evolving Representations"**:
-We implemented a dynamic `MemoryManager` (`app/memory.py`) that strictly satisfies the hackathon's "Evolving Representations" requirement:
+We implemented a dynamic `MemoryManager` (`app/memory.py`) that strictly satisfies the project's "Evolving Representations" requirement:
 *   **Reinforcement**: Every time a memory is retrieved, the system increments its `access_count` and boosts its `decay_weight` (Line 53 of `memory.py`).
 *   **Real-time Updates**: These modified weights are written back to the Qdrant index immediately avoiding static memory.
 *   **Decay Simulation**: The retrieval logic favors higher-weight memories, allowing unused interactions to naturally fade while important context ("knowledge") is reinforced over time.
@@ -108,4 +108,4 @@ make run-api
 3.  *"What are latest Bird Flu updates?"* (Tests **Live Ingestion**)
 
 ---
-*Submitted for the 2026 AI Hackathon*
+*Submitted for the 2026 AI Project Showcase*

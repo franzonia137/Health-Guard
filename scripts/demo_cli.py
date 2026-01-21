@@ -11,7 +11,7 @@ def print_section(title):
 
 def wait_for_api():
     print("Checking if API is running (ensure 'make run-api' is running in another tab)...")
-    # Actually, for this strict hackathon requirement "end-to-end runnable locally" and "make demo",
+    # Actually, for this strict requirement "end-to-end runnable locally" and "make demo",
     # the user might expect this script to spin up the API too? 
     # Usually 'demo' assumes the service is reachable or self-contained. 
     # For simplicity, we assume the user follows 'make run-api' then 'make test-demo',
